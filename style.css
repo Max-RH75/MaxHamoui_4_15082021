@@ -7,6 +7,26 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.mobcenter {
+    margin: 0 auto;
+}
+
+.taille1 {
+    font-size: 18px;
+}
+
+.ita {
+    font-style: italic;
+}
+
+.taille2 {
+    font-size: 15px;
+}
+
+.taille3 {
+    font-size: 14px;
+}
+
 a,
 button {
     transition: all .3s ease-in-out;
@@ -323,6 +343,7 @@ a:hover {
 }
 
 .nav > li {
+    list-style-type: none;
     float: left;
     margin-top: 4px;
     font-size: 16px;
@@ -366,7 +387,7 @@ a:hover {
     .site-navigation {
         position: absolute;
         top: 50%;
-        right: 20px;
+        right: 180px;
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
     }
@@ -709,6 +730,12 @@ h2 {
     line-height: 1.4em;
 }
 
+.h2imp {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #333333!important;
+}
+
 h3 {
     font-size: 15px;
     text-transform: uppercase;
@@ -771,20 +798,20 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #283d7b;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #283d7b;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #2e4790!important;
     color: #FFFFFF!important;
 }
 
@@ -797,11 +824,11 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #283d7b!important;
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #c27956!important;
+    color: #2e4790!important;
 }
 
 .icon-dark-slate-blue {
@@ -822,7 +849,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -848,13 +875,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -872,10 +899,6 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -884,8 +907,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -1039,4 +1060,21 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+.nav-pcontact li:first-child {
+    margin-right: 1rem;
+}
+
+.sr-only {
+    position: absolute; 
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.keywords {
+    color:#cccccc;
+    font-size:0;
 }
